@@ -71,11 +71,14 @@ def useWebCam():
 def useImage(imagePath):
     img = cv.imread(imagePath)
     findCard(img)
-
-if __name__ == '__main__':
-    h4 = cv.imread("Resources/1.png")
-    h4 = cv.resize(h4,(70,24))
-    useImage('Resources/imgg.jpeg')
     cv.waitKey()
     cv.destroyAllWindows()
+
+def compareImg(img):
+    h4 = cv.imread("Resources/1.png")
+    h4 = cv.resize(h4,(70,24))
+    #Do compare logic
+
+if __name__ == '__main__':
+    useImage('Resources/imgp.jpg')
 
